@@ -3,5 +3,5 @@ const myButton = document.getElementById("myButton");
 const myText = document.getElementById("myText");
 
 myButton.addEventListener("click", function() {
-  myText.textContent = "Привет, мир!";
+  myText.textContent = "1488";
 });
