@@ -1,39 +1,424 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="shortcut icon" href="/DiiaLogo.svg.ico" type="/x-icon">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>скрытый пул</title>
-    <style>
-	.align {
-		text-align: right;
-	}
-	    .align-center {
-		text-align: center;;
-	}
-    </style>
-</head>
-    
-<body>
-	<script src = "index2.js"></script>
-	<h1>ВСЕ.ВРАГИ.НАШЕЙ.ИДЕОЛОГИИ.ДОЛЖНЫ.УМЕРЕТЬ</h1>
-    <p>габен хуй соси</p>
-    <img src="logo.png" alt="Мое изображение">
-    <div>
-    	<p class="align">габен хуй соси</p>
-    	<p class="align"><video src="video.mp4" width="640" height="360"  controls>
-  	Ваш браузер не поддерживает HTML5 видео. 
-	</video></p>
-    </div>
-	<div class = "align-center">
-	<p><button id="myButton">Нажми меня</button></p>
-	<p id="myText"></p>
-	<script src = "index.js"></script>
-	</div>
-	
 
+<!DOCTYPE HTML>
+<html xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" CONTENT="text/html; charset=cp1251">
+<meta name="keywords" http-equiv="keywords" content="">
+<meta name="description" content="">
+<meta name="classification" content="Education, High school, Campus, Kyiv">
+<meta http-equiv="Cache-Control" content="no-cache"><meta http-equiv="Pragma" content="no-cache">
+<meta NAME="revisit" CONTENT="7 days"><meta NAME="revisit-after" CONTENT="7 days"><meta NAME="robots" CONTENT="index, follow">
+<meta name="distribution" content="Global"><meta name="allow-search" content="yes">
+<meta http-equiv="reply-to" content="info@campus.kpi.ua">
+<meta name="document-state" content="dynamic">
+<meta name="author" content="Design, web-architecture and programming by 3SunS. Data and DB support provided by KBIS and KPI subdivisions">
+<base href="https://campus.kpi.ua/">
+<link type="image/ico" href="images/icon.ico" rel="SHORTCUT ICON">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" language="JavaScript" src="js/jquery/jquery.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/jquery/jquery.tablesorter.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/jquery/jquery.pngfix.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/register0.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/common_g.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/jquery/floating_panel.jquery.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/common.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/panels.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/wz_jsgraphics.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/jquery/jquery.form.js"></script>
+
+<script language="JavaScript" src="js/jquery/ui/jquery-ui.min.js"></script>
+<script language="javascript" src="js/jquery/grid/grid.locale-en.js"></script>
+<script language="JavaScript" src="js/jquery/grid/grid.locale-ua.js"></script>
+<script language="JavaScript" src="js/jquery/grid/jquery.jqgrid.min.js"></script>
+<script>
+var ra = "student/";
+if (!empty(base_url)) ra = base_url + ra;
+</script>
+
+<link rel="stylesheet" type="text/css" media="screen"  href="js/jquery/ui/smoothness/jquery-ui.custom.css">
+<link rel="stylesheet" type="text/css" media="screen"  href="js/jquery/grid/ui.jqgrid.css">
+
+</head>
+<body><div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+<script type="text/javascript" language="JavaScript" src="classes/overlib.js"></script>
+<a name="top"></a>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" class="main_tbl">
+    <tr nowrap="nowrap">
+        <!--левая боковая-->
+        <th class="left_clmn" valign="top" rowspan="3"></th>
+        <!--центральная (контентная) -->
+        <td valign="top" class="header" nowrap="nowrap">
+			
+            
+            <!--шапка с лого и контролами-->
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td class="content_left logo"><a href="student/"><img src="images/logo.png" alt="е-Кампус КПІ"></a>
+                    </td>
+                    <td class="content_area">
+						<table cellpadding="0" cellspacing="0" border="0" class="profile">
+							<tr>
+								<td class="title"><span>Вітаємо, </span>  Лішенко Олександр Дмитрович!</td>
+								<td class="switch">
+									<select id="role_switch"  disabled="disabled">
+										<option value="">.: змінити роль :.</option>
+																				
+									</select>
+								</td>
+								<td class="ctrl"><a href="student/index.php?mode=logout" title="Вихід"><img src="images/ctrl/exit.png" alt="[X]"  border="0" title="Вихід"></A>
+								</td>
+							</tr>
+						</table>
+						<form action="student/index.php?mode=search" method="post" name="search_form">
+						<table cellpadding="0" cellspacing="0" border="0" class="searchBox">
+							<tr>
+								<!--<td class="title"></td>-->
+								<td>
+									<input name="search_str" type="text" id="search_str_" value="Пошук...">
+									<input type="image" id="search_btn" src="images/ctrl/search.png" style="width:auto; height:auto" disabled="disabled"> 
+									<!--<button disabled="disabled"><img src="images/ctrl/search.png" alt="[пошук]"  border="0" title="пошук"></button>-->
+								
+								</td>
+								<td class="advance"><a href="#student/index.php?mode=search" title="Розширений пошук" class="dis">Розширений пошук</a>
+								</td>
+							</tr>
+						</table>
+						</form>
+
+						<table cellpadding="0" cellspacing="0" border="0" class="navigation">
+							<tr>
+								<td><a href="student/" title="">Головна</a>
+															  
+							  
+							  								<img src="images/nav_line/arrow.png" alt="&raquo;"  title="&raquo;">Результати календарного контролю							  								</td>
+							</tr>
+						</table>
+												<div class="pageHead" style="background-image:url(images/page/attestationresults.png);">Результати календарного контролю</div>
+						                    </td>
+                </tr>
+            </table>
+            
+			        </td>
+        
+        
+        <!--правая боковая-->
+        <th class="right_clmn" valign="top" rowspan="3"></th>
+    </tr>
     
+
+    <tr>
+        <td class="centre_clmn2">
+		
+            <!--контентная часть страницы-->
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+                <tr valign="top">
+                     <!--навигационное меню-->
+                     <td class="menu" nowrap>
+                        <table cellpadding="0" cellspacing="3" border="0" width="100%">
+								
+	
+                                <TR class="lm_item mi_common">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=profile">Мій профіль</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>							
+	
+                                <TR class="lm_item mi_common">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=contacts">Контакти</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>							
+	
+                                <TR class="lm_item mi_common">
+                                        <TD>
+												<A  href="https://ecampus.kpi.ua/help" target="_blank">Довідка</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>							
+	
+                                <TR class="lm_item mi_common">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=kodeks">Кодекс честі</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>							
+	<tr><td class="spacer spacer_between"></td></tr>
+
+	
+                                <TR class="lm_item">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=bb">Дошка Оголошень</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>	
+                                <TR class="lm_item">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=msg">Повідомлення</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>	
+                                <TR class="lm_item">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=kurator">Куратор</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>	
+                                <TR class="lm_item">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=rnp">РНП</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>	
+                                <TR class="lm_item">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=mob">Метод.забезпечення</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>	
+                                <TR class="lm_item">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=studysheet">Поточний контроль</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>	
+                                <TR class="lm_item">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=vote">Опитування</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>	
+                                <TR class="lm_item">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=rectorialcontrol">Ректорський контроль</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>	
+                                <TR class="lm_item">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=vedomoststud">Сесія</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>	
+                                <TR class="lm_item">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=pk2023">Вступ 2023 (магістратура)</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>	
+                                <TR class="lm_item">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/student/index.php?mode=studdoc">Документи (студ.)</A>
+                                        </TD>
+                                </TR>
+
+	<TR class="lmi_delim"><TD></TD></TR>	
+                                <TR class="lm_item_active">
+                                        <TD>
+												<A  href="https://campus.kpi.ua/tutor/index.php?mode=attestationresults">Результати атестації</A>
+                                        </TD>
+                                </TR>
+
+	                			<tr><td class="spacer"></td></tr>
+                        </table>
+                     </td>
+                    <td valign="top">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                			<tr>
+                               <td class="cntnt" valign="top" colspan="2">
+	                              
+          <!-- -=- -=- -=- -=- -=- -=- -=- -=- -=- content  -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -->
+                                                    <script src="kurator/tpl/js/jquery-1.10.2.js"></script>
+<script src="kurator/tpl/js/jquery-ui.js"></script>
+<link rel="stylesheet" href="kurator/tpl/css/kurator.css">
+<link rel="stylesheet" href="kurator/tpl/css/jquery-ui.css">
+
+    <style>
+        .content_block table {
+            border: 1px solid;
+        }
+
+        .content_block td {
+            border-right: 1px solid #D0D0D0;
+            border-bottom: 1px solid #d0d0d0;
+        }
+
+        .ListBox td {
+            padding: 5px;
+            vertical-align: middle;
+        }
+
+        .content_block th {
+            text-align: center;
+            background-color: #eee;
+            padding: 5px;
+            border-right: 1px solid #D0D0D0;
+            border-bottom: 1px solid #d0d0d0;
+        }
+
+        .content_block tr:nth-child(even) {
+            background-color: #E4F3FF;
+        }
+    </style>
+
+
+
+<div class="moBox" style="width: 100%;">
+    <div class="content_block">
+        <table id="StudyCourseData" class="ListBox" cellspacing="0" width="100%" style="text-align: center">
+            <thead>
+            <tr>
+                <th>Дисципліна</th>
+                <th>Викладач</th>
+                <th>1 семестр<br>Атестація №1</th>
+                <th>1 семестр<br>Атестація №2</th>
+                <th>2 семестр<br>Атестація №1</th>
+                <th>2 семестр<br>Атестація №2</th>
+            </tr>
+            </thead>
+            <tbody>
+                            <tr>
+                    <td>Практичний курс іноземної мови. Частина 1</td>
+                    <td>Кондрашова А. В.</td>
+
+                    <td>a</td>
+                    <td>a</td>
+                    <td></td>
+                    <td></td>
+                                    </tr>
+                            <tr>
+                    <td>Українська мова за професійним спрямуванням</td>
+                    <td>Тільняк Н. В.</td>
+
+                    <td>a</td>
+                    <td>a</td>
+                    <td></td>
+                    <td></td>
+                                    </tr>
+                            <tr>
+                    <td>Лінійна алгебра та аналітична геометрія</td>
+                    <td>Владіміров В. М.</td>
+
+                    <td>a</td>
+                    <td>a</td>
+                    <td></td>
+                    <td></td>
+                                    </tr>
+                            <tr>
+                    <td>Математичний аналіз. Частина 1. Диференціальне числення</td>
+                    <td>Владіміров В. М.</td>
+
+                    <td>a</td>
+                    <td>a</td>
+                    <td></td>
+                    <td></td>
+                                    </tr>
+                            <tr>
+                    <td>Основи здорового способу життя</td>
+                    <td>Михайленко В. М.</td>
+
+                    <td>a</td>
+                    <td>a</td>
+                    <td></td>
+                    <td></td>
+                                    </tr>
+                            <tr>
+                    <td>Комп'ютерна дискретна математика</td>
+                    <td>Шуклін Г. В.</td>
+
+                    <td>a</td>
+                    <td>a</td>
+                    <td></td>
+                    <td></td>
+                                    </tr>
+                            <tr>
+                    <td>Алгоритми та структури даних. Частина 1. Основи алгоритмізації</td>
+                    <td>Барабаш О. В.</td>
+
+                    <td>a</td>
+                    <td>н/a</td>
+                    <td></td>
+                    <td></td>
+                                    </tr>
+                            <tr>
+                    <td>Основи програмування. Частина 1. Базові конструкції</td>
+                    <td>Олєнєва К. М.</td>
+
+                    <td>a</td>
+                    <td>н/a</td>
+                    <td></td>
+                    <td></td>
+                                    </tr>
+                            <tr>
+                    <td>Екологічна безпека та цивільний захист</td>
+                    <td>Пятова А. В.</td>
+
+                    <td>a</td>
+                    <td>a</td>
+                    <td></td>
+                    <td></td>
+                                    </tr>
+                        </tbody>
+        </table>
+    </div>
+</div>
+<div id="debug" style="display:none"></div>												<br><br>
+												<span style="color:#CCCCCC; font-size:95%"></span>
+		  
+                                        <!-- -=- -=- -=- -=- -=- -=- -=- -=- -=- eof content  -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -->
+                                  
+                              </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                    
+                </tr>
+            </table>
+					
+        </td>
+    </tr>
+    
+    <tr>
+        <td style="vertical-align:bottom" class="footer">
+            <!--нижняя часть страницы-->
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" class="footer">
+                <tr>
+                    <td>						Національний технічний університет України "КПІ ім. Ігоря Сікорського" &copy; 2011-2023<br>
+						Усі права застережено. <a href="https://ecampus.kpi.ua/privacy">Правила використання інформації сайту</a>.<br>
+						Інформаційна підтримка: тел. +38 (044) 204 80 06, e-mail:· ecampus@kpi.ua<br>
+		                    </td>
+					<td class="socials">
+
+					</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    
+</table>
+
 </body>
+<script type="text/javascript" language="JavaScript" src="js/init_panels.js"></script>
+<!--<script type="text/javascript" language="JavaScript" src="js/timer.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/ajax/test_check.js"></script>-->
 </html>
